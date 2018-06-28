@@ -1,0 +1,5 @@
+.idea
+node_modules
+public/js/bundle.js
+.vscode
+.DS_Store
