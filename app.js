@@ -10,7 +10,7 @@ var querystring = require('querystring');
 
 // New express application and execution port
 var app = express();
-var port = process.env.PORT || 8083;
+var port = process.env.PORT || 8080;
 
 // Disable etag
 app.disable('etag');
