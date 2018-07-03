@@ -1,0 +1,34 @@
+{
+  "name": "bio-backend",
+  "version": "0.0.1",
+  "description": "Node Server integrate Torre Bio and Linkedin",
+  "main": "app.js",
+  "scripts": {
+    "watch": "watchify app.js -o public/js/bundle.js -v",
+    "browserify": "browserify app.js | uglifyjs > public/js/bundle.js",
+    "build": "npm run browserify ",
+    "start": "npm install"
+  },
+  "author": "Salun Marvin",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "express": "~4.9.7",
+    "express-handlebars": "~1.1.0",
+    "json-stringify-safe": "^5.0.1",
+    "mongoose": "^4.2.6",
+    "node-jsx": "~0.12.4",
+    "react": "~0.14.6",
+    "socket.io": "^1.1.0",
+    "sqlite3": "^4.0.1",
+    "twitter": "^1.2.0"
+  },
+  "devDependencies": {
+    "browserify": "~6.0.3",
+    "nodemon": "^1.2.1",
+    "reactify": "~1.1.1",
+    "uglify-js": "~2.4.15",
+    "watchify": "^3.1.1"
+  }
+}
